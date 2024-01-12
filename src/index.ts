@@ -257,6 +257,84 @@ function printAge(year: number): number {
 }
 
 
+// React
+
+// import React from 'react';
+// const App: React.FC = () => {
+//     return (
+//         <div>
+//         <h1>Hello World < /h1>
+//             < /div>
+//     )}
+
+// export default App;
+
+
+//! UseState
+
+// import React from 'react';
+// const App: React.FC = () => {
+// const [state, setSate]=useState<String>("");
+//     return (
+//         <div>
+//         <h1>{state}< /h1>
+//           < /div>
+//     )}
+
+// export default App;
+
+//! props
+// import React from 'react';
+// import Child from './child';
+
+// interface arrInterface{
+// id:number;
+// name:string;
+// isCheck:boolean;
+// }
+
+// const App: React.FC = () => {
+// const [state, setState]=useState<String>("");
+// const [arr, setArr] = useState<arrInterface []>([])
+// const inputRef = useRef<HTMLInputElement>(null)
+
+// let handleAdd=(e:React.FormEvent):void=>{
+// e.preventDefault();
+// }
+
+//     return (
+//         <div>
+//         <h1>Test< /h1>
+// <input ref={inputRef} type="text" value={state} onChange={(e)=>setValue(e.target.value)}/>
+// <Child state={ state } setState = { setState } handleAdd={handleAdd}/>
+//           < /div>
+//     )}
+// export default App;
+
+
+//* Child comp
+
+// interface props {
+//     state: String,
+//     setState: React.Dispatch<React.SetStateAction<string>>
+// handleAdd: (e:React.FormEvent) => void;
+// }
+
+// const Child: React.FC <props> = ({ state, setState, handleAdd }: props) => {
+//     return (
+//         <div>
+//              { state }
+//         </div>
+//     )
+
+
+// }
+// export default Child;
+
+
+
+
+
 
 
 
